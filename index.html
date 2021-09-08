@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 15px; */
+        background-color: #ffff;
+        border-bottom: 1px solid #f2f2f2;
+        position: fixed;
+        width: 100%;
+
+    }
+
+    footer {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: seashell;
+        border-bottom: 1px solid #f2f2f2;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        border-top: 1px solid #f2f2f2;
+   
+
+    }
+
+    .logo {
+        height: 80px;
+        
+    }
+
+    .header-action {
+        height: 30px;
+      
+
+    }
+
+    .header-actions {
+        margin-right: 10px;
+        /* padding: 20px; */
+    }
+
+    .footer-action {
+        height: 25px;
+        margin:auto;
+
+    }
+  .user{
+      border-radius: 50% ;
+  }
+  .username{
+      font-size: 10px;
+      align-self: center;
+  }
+  .profile-pic {
+      height:75px;
+      width: 75px;
+      margin-top: 60px;
+      border-radius: 50%;
+      border: 2px solid purple;
+      padding:3px;
+  }
+  .status-container{
+      padding-left: 16px;
+      padding-right:16px;
+      display:flex;
+/*       
+      
+      flex-wrap: wrap;
+      height:100px; */
+ overflow-x: auto;
+  }
+  .status-container::-webkit-scrollbar {
+      display:none;
+  }
+  .status{
+      padding-left: 15p; 
+      padding-right: 15px;
+      display:flex;
+      flex-direction: column;
+  }
+  .post-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f2f2f2;
+      border-top: 2px solid #f2f2f2;
+  }
+ .more-options {
+     height:50px;
+ }
+ .posts-container {
+     margin-top: 20px;;
+ }
+ 
+ .post-img {
+     width:40px;
+     height:40px;
+     border-radius: 50%;
+ }
+ .sender-info {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .sender-name {
+     margin-left:15px;
+ }
+ .post {
+     
+    
+     margin-bottom:50px;
+ }
+ .postdata {
+    width: 100%;
+    background-color: black;
+ }
+ 
+</style>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="./assets/logo.png" alt="" class="logo">
+            <div class="header-actions">
+                <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/add-post-1702566-1486981.png" alt="" class="header-action">
+                <img src="./assets/messege.png" class="header-action" alt="">
+            </div>
+        </header>
+    </div>
+    <section class="status-container">
+        <div class="status">
+            <img src="./assets/profile.jpg" class="profile-pic" alt="">
+            <span class="username">padmakar</span>
+        </div>
+        <div class="status">
+            <img src="./assets/profile.jpg" class="profile-pic" alt="">
+            <span class="username">padmakar</span>
+        </div>
+        <div class="status">
+            <img src="./assets/profile.jpg" class="profile-pic" alt="">
+            <span class="username">padmakar</span>
+        </div>
+        <div class="status">
+            <img src="./assets/profile.jpg" class="profile-pic" alt="">
+            <span class="username">padmakar</span>
+        </div>
+        <div class="status">
+            <img src="./assets/profile.jpg" class="profile-pic" alt="">
+            <span class="username">padmakar</span>
+        </div>
+    </section>
+    <section class="posts-container">
+       <div class="post">
+           <div class="post-header">
+               <div class="sender-info">
+<img src="./assets/profile.jpg" class="post-img" alt="">
+<span class="sender-name"> padmakar4u</span>
+               </div>
+               <img src="./assets/more.png" alt="" class="more-options">
+           </div>
+           <div class="post-body">
+               <img src="./assets/profile.jpg" class="postdata" alt="">
+               <div class="post-actions">
+              <h1>     sdfjkbsdfkj</h1>
+               </div>
+           </div>
+       </div>
+
+    </section>
+    <footer>
+
+        <img src="./assets/home.png" alt="" class="footer-action">
+        <img src="./assets/add-post-1702566-1486981.png" alt="" class="footer-action">
+        <img src="./assets/messege.png" class="footer-action" alt="footer-action">
+        <img src="./assets/love.png" alt="" class="footer-action">
+        <img src="./assets/profile.jpg" alt="" class="footer-action user">
+
+
+
+
+    </footer>
+</body>
+
+</html>
